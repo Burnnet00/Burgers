@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Burger</title>
+    <title>Burgers</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -17,13 +17,13 @@
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <a href="#">About us</a>
+                        <a data-link="why">About us</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Menu</a>
+                        <a data-link="products">Menu</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Contacts</a>
+                        <a data-link="order">Order</a>
                     </li>
                 </ul>
             </nav>
@@ -43,7 +43,7 @@
                     peppers and a sauce that awakens all your senses. Are you ready to take on the challenge?
                 </p>
                 <div class="main-action">
-                    <button class="button">SEE MENU</button>
+                    <button class="button" id="main-action-button">SEE MENU</button>
                 </div>
             </div>
             <img src="imgs/main_burger.png" alt="Big burger" class="main-image">
@@ -51,7 +51,7 @@
     </section>
 </section>
 
-<section class="why">
+<section class="why" id="why">
     <div class="container">
         <div class="why-title common-title">why choose us</div>
         <div class="why-items">
@@ -84,7 +84,7 @@
 </section>
 
 
-<section class="products">
+<section class="products" id="products">
     <div class="container">
         <div class="products-title common-title">choose your burger</div>
         <div class="products-items">
@@ -412,7 +412,7 @@
 </section>
 
 
-<section class="order">
+<section class="order" id="order">
     <div class="container">
         <div class="order-title common-title">Placing an order</div>
         <img src="imgs/order_image.png" alt="Burger in the box" class="order-image">
@@ -444,6 +444,8 @@
         <div class="rights">All rights reserved</div>
     </div>
 </footer>
+
+<script src="scripts/script.js"></script>
 
 </body>
 </html>
