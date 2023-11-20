@@ -51,10 +51,10 @@ document.getElementById("change-currency").onclick = function (e) {
         newCurrency = "₽";
         coefficient = 80;
     } else if (currentCurrency === "₽") {
-        newCurrency = "BYN";
-        coefficient = 3;
+        newCurrency = "₴";
+        coefficient = 37.3;
     }
-    else if (currentCurrency === 'BYN') {
+    else if (currentCurrency === '₴') {
         newCurrency = '€';
         coefficient = 0.9;
     } else if (currentCurrency === '€') {
